@@ -16,7 +16,6 @@ struct ArticlesDetailView: View {
     var body: some View {
         
         WebView(url: URL(string: article.webUrl)!)
-            .navigationTitle(article.webTitle)
             .navigationBarTitleDisplayMode(.inline)
         
     }

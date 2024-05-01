@@ -28,7 +28,7 @@ struct ContentView: View {
             // CAMERA
             CameraView(classifier: ImageClassifier())
                 .tabItem {
-                    Label("", systemImage: "camera")
+                    Label("", systemImage: "camera.fill")
                 }
             
             // ABOUT

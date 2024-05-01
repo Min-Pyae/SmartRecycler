@@ -31,7 +31,7 @@ struct AboutView: View {
                         
                         FeatureText(text: "Scan household items to learn about recyclable materials and disposal methods")
                         FeatureText(text: "Watch DIY tutorials on recycling those scanned materials")
-                        FeatureText(text: "Contribute to the community by sharing your knowledge and tips")
+                        FeatureText(text: "Read the latest news articles related to environment, recycling and eco-friendly practices")
                     }
                     
                     

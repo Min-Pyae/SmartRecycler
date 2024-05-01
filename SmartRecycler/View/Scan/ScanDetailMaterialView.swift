@@ -38,7 +38,6 @@ struct ScanDetailMaterialView: View {
                             .font(.title2)
                             .fontWeight(.semibold)
                         
-                
                     }
                     
                     
@@ -62,7 +61,6 @@ struct ScanDetailMaterialView: View {
                     }
                     
                     
-                    
                     // RECYCLING TIPS
                     VStack(alignment: .leading, spacing: 10) {
                         
@@ -83,7 +81,6 @@ struct ScanDetailMaterialView: View {
                     }
                     
                 }
-                
                 
             }
 

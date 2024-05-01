@@ -42,7 +42,7 @@ struct CameraView: View {
                                         .scaledToFit()
                                         .padding()
                                 } else {
-                                    Text("Try Keeping Only One Object")
+                                    Text("Try Keeping One Item Clearly")
                                         .font(.headline)
                                         .foregroundStyle(.primary)
                                 }
@@ -60,18 +60,21 @@ struct CameraView: View {
                                     
                                     Text("\(identifiedObject) (\(category))")
                                         .font(.headline)
+                                        .foregroundStyle(.white)
                                         .onTapGesture {
                                             onTapLabel(object: identifiedObject)
                                         }
                                 } else {
                                     Text("\(identifiedObject)")
                                         .font(.headline)
+                                        .foregroundStyle(.white)
                                         .onTapGesture {
                                             onTapLabel(object: identifiedObject)
                                         }
                                 }
                                 
                                 Image(systemName: "info.circle")
+                                    .foregroundStyle(.white)
                                 
                             }
                             .sheet(isPresented: $viewModel.showDetailSheet) {
@@ -80,7 +83,6 @@ struct CameraView: View {
                             .font(.subheadline)
                             .padding()
                             .background(Color.green.opacity(0.8))
-                            .foregroundColor(.white)
                             .clipShape(RoundedRectangle(cornerRadius: 10))
                             .padding()
                             
@@ -128,16 +130,8 @@ struct CameraView: View {
                 .padding()
                 
             }
-            .navigationTitle("Scan Waste")
+            .navigationTitle("Scan Item")
             .navigationBarTitleDisplayMode(.inline)
-            .sheet(isPresented: $showImagePicker) {
-                ImagePicker(uiImage: $uiImage, isPresenting: $showImagePicker, sourceType: $sourceType)
-                    .onDisappear {
-                        if let uiImage = uiImage {
-                            classifier.detect(uiImage: uiImage)
-                        }
-                    }
-            }
             .navigationBarItems(
                 trailing:
                     Button(action: {
@@ -150,7 +144,15 @@ struct CameraView: View {
             )
             .sheet(isPresented: $showHelpSheet) {
                 HelpSheetView(show: $showHelpSheet)
-                    .presentationDetents([.height(350)])
+                    .presentationDetents([.height(450)])
+            }
+            .sheet(isPresented: $showImagePicker) {
+                ImagePicker(uiImage: $uiImage, isPresenting: $showImagePicker, sourceType: $sourceType)
+                    .onDisappear {
+                        if let uiImage = uiImage {
+                            classifier.detect(uiImage: uiImage)
+                        }
+                    }
             }
             .padding()
             
