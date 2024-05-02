@@ -13,17 +13,17 @@ struct HelpSheetView: View {
     
     var body: some View {
         NavigationView {
-            VStack(alignment: .leading, spacing: 20) {
+            VStack(alignment: .leading, spacing: 40) {
                 
-                Text("Waste Scanner uses AI image labelling and object recognition to process the photo and provide the videos for recycling.")
+                Text("This scanner uses image classification technology to provide information and videos for recycling and disposal of scanned item.")
                     .font(.headline)
                 
-                VStack(alignment: .leading, spacing: 6) {
-                    Text("Tutorial")
+                VStack(alignment: .leading, spacing: 15) {
+                    Text("Tip")
                         .font(.title2)
                         .fontWeight(.bold)
                     
-                    Text("For the best result, try keeping only one object in the photo, and make it clearly visible.")
+                    Text("Try to keep only one object of the image and make it clear for the best result.")
                         .font(.headline)
                 }
                 

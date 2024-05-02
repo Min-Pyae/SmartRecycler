@@ -17,6 +17,7 @@ struct ArticlesDetailView: View {
         
         WebView(url: URL(string: article.webUrl)!)
             .navigationBarTitleDisplayMode(.inline)
+            .toolbar(.hidden, for: .tabBar)
         
     }
     

@@ -100,7 +100,9 @@ struct HomeDetailView: View {
                 
             }
             .padding()
-        .navigationTitle(material.name)
+            .navigationTitle(material.name)
+            .toolbar(.hidden, for: .tabBar)
+            
         }
     }
 }
