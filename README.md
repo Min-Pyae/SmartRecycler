@@ -3,7 +3,7 @@
 A native iOS application that users can scan any household waste item to recycle or dispose of it in the most environmentally friendly way.
 
 ## Demo
-
+https://github.com/Min-Pyae/SmartRecycler/assets/86566662/b8061edf-2bc6-4470-91ee-0ffdd338e8fb
 
 ## Table of Contents
 
