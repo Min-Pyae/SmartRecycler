@@ -30,9 +30,11 @@ This repository contains a native iOS application built with Swift, SwiftUI, Web
 
 ### Light Mode
 
+![Light-Mode](https://github.com/Min-Pyae/SmartRecycler/assets/86566662/34b9ef07-a982-4c7e-a9e4-04467fb0d34a)
 
 ### Dark Mode
 
+![Dark-Mode](https://github.com/Min-Pyae/SmartRecycler/assets/86566662/232fe4f4-bde3-4c68-96e5-2bedfd080710)
 
 ## Technologies Used
 
