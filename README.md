@@ -45,7 +45,7 @@ This repository contains a native iOS application built with Swift, SwiftUI, Web
 
 1. Clone the repository: `https://github.com/Min-Pyae/SmartRecycler.git`
 2. Open the project in Xcode.
-3. Build and run the app on your iOS simulator or physical device.
+3. Build and run the app on your iOS simulator or physical device (recommended for better result).
 
 ## Contributing
 Contributions to the 'Smart Recycler' Application are welcome! If you have any ideas for new features, bug fixes, or improvements, please open an issue or submit a pull request with your changes.
